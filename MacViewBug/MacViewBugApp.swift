@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct MacViewBugApp: App {
+    
+    @State private var viewModel = ViewModel()
+    @State var sheetCoordinator = SheetCoordinator<DetailsSheet>()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(viewModel)
+                .environment(sheetCoordinator)
         }
     }
 }
