@@ -24,6 +24,7 @@ enum DetailsSheet: String, Identifiable, @preconcurrency SheetEnum {
         switch self {
         case .view1:
             View1()
+                .presentationBackgroundInteraction(.enabled)
         case .view2:
             View2()
         case .view3:

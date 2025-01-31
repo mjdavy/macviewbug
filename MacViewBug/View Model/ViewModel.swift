@@ -10,6 +10,11 @@ import Foundation
 @Observable
 class ViewModel {
     
-    
-    
+    var data : [String] = [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+    ]
 }
